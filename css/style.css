@@ -424,8 +424,7 @@ img {
 
 .footer-name {
   color: #333333;
-  font-family: Montserrat;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -446,16 +445,16 @@ input {
   border: 1px solid #e7e7e7;
   outline: none;
   color: #9c9999;
-  font-family: "Roboto";
-  font-size: 15px;
+  font-family: var(--ff-secondary);
+  font-size: 1.5rem;
   font-weight: 400;
   font-style: italic;
 }
 
 input::placeholder {
   color: #cccccc;
-  font-family: "Roboto";
-  font-size: 15px;
+  font-family: var(--ff-secondary);
+  font-size: 1.5rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -465,7 +464,6 @@ input::placeholder {
   border: none;
   background-color: #95e1d3;
   color: #ffffff;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
