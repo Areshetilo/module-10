@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --ff-main: "Montserrat";
+  --ff-secondary: "Roboto";
+  --ff-script: "Kaushan Script";
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  border-style: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-header {
+  padding-top: 28px;
+  padding-bottom: 230px;
+  background-image: url(../img/main-bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 164px;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.list__item-link {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.nav-list__item {
+  margin-right: 54px;
+}
+
+.nav-list__item:last-child {
+  margin-right: 0;
+}
+
+.nav-button__icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+.nav-button svg {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-button svg:hover {
+  fill: #fce38a;
+  transform: scale(1.4);
+}
+
+.nav-list__item a {
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-list__item a:hover {
+  color: #fce38a;
+}
+
+.nav-list__item a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: #fce38a;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-list__item a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
